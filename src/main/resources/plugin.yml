@@ -1,9 +1,10 @@
-name: CronRunner
-main: io.github.patrick.sample.plugin.SamplePlugin
+name: LiteWaffle-Admin
+main: com.github.sapokr.LiteWaffle_Admin
 version: 1.0
-description: Sample plugin
-author: PatrickKR
-website: https://github.com/patrick-choe/sample-plugin
+description: Litewaffle Admin function
+author: SapoKR
 api-version: 1.17
 libraries:
   - org.jetbrains.kotlin:kotlin-stdlib:1.5.31
+depend:
+  - LiteWaffle

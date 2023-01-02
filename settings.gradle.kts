@@ -1,2 +1,2 @@
-rootProject.name = "sample-plugin"
+rootProject.name = "LiteWaffle-Admin"
 
