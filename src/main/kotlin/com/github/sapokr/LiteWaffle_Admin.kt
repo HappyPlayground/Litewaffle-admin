@@ -2,15 +2,14 @@ package com.github.sapokr
 
 import com.discord.sapokr.litewaffle.LiteWaffle.Companion.LWUtility
 import com.discord.sapokr.litewaffle.LiteWaffle.Companion.LWInitialize
-import org.bukkit.plugin.java.JavaPlugin
-
+import org.bukkit.plugin.java.JavaPlugin;
 class LiteWaffle_Admin : JavaPlugin() {
     companion object {
         var LiteUtility: LWUtility = LWInitialize("LiteWaffle_Admin")
     }
 
     override fun onEnable() {
-        logger.info("")
+        logger.info("LiteWaffle Admin Loaded.")
 
         LiteUtility.setDisplayname("LiteWaffle Admin")
 
@@ -18,6 +17,6 @@ class LiteWaffle_Admin : JavaPlugin() {
     }
 
     override fun onDisable() {
-        logger.info("")
+        logger.info("LiteWaffle Admin Unloaded.")
     }
 }

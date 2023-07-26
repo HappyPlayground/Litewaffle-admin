@@ -8,3 +8,6 @@ libraries:
   - org.jetbrains.kotlin:kotlin-stdlib:1.5.31
 depend:
   - LiteWaffle
+loadbefore: [
+  LiteWaffle
+]

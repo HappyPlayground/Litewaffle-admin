@@ -8,11 +8,13 @@ import org.bukkit.Bukkit
 class LWAHandler: ListenerAdapter() {
     override fun onMessageReceived(event: MessageReceivedEvent) {
         val content = event.message.contentRaw.substring(1)
+
         if (content.startsWith("/")) {
             if (!Ops.contains(event.author.id)) {
                 event.message.reply("권한이 없습니다.").queue()
                 return
             }
+
             val plugin = Bukkit.getPluginManager().getPlugin("LiteWaffle-Admin") ?: return
 
             Bukkit.getScheduler().runTask(plugin, Runnable {
